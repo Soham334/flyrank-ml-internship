@@ -1,1 +1,90 @@
-
+{
+  "seed": 42,
+  "split": "GroupKFold(n_splits=5) by client_id; metrics computed on concatenated out-of-fold predictions",
+  "n_rows": 30000,
+  "n_clients": 32,
+  "base_rate": 0.5420666666666667,
+  "baseline_flagged_total": 174,
+  "model_roc_auc": 0.6649291261474846,
+  "baseline_roc_auc": 0.4991728383375165,
+  "model_average_precision": 0.6678194585302881,
+  "baseline_average_precision": 0.5417096510163317,
+  "model_precision_at_20": 0.75,
+  "baseline_precision_at_20": 0.55,
+  "model_precision_at_50": 0.74,
+  "baseline_precision_at_50": 0.46,
+  "model_precision_at_100": 0.81,
+  "baseline_precision_at_100": 0.49,
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_test_rows": 7008,
+      "n_test_clients": 1,
+      "test_base_rate": 0.4901541095890411,
+      "baseline_flagged_in_fold": 13,
+      "model_auc": 0.6003930497655268
+    },
+    {
+      "fold": 1,
+      "n_test_rows": 5731,
+      "n_test_clients": 7,
+      "test_base_rate": 0.6454370964927587,
+      "baseline_flagged_in_fold": 15,
+      "model_auc": 0.6248293058562326
+    },
+    {
+      "fold": 2,
+      "n_test_rows": 5753,
+      "n_test_clients": 8,
+      "test_base_rate": 0.37945419780983836,
+      "baseline_flagged_in_fold": 72,
+      "model_auc": 0.7107697499522027
+    },
+    {
+      "fold": 3,
+      "n_test_rows": 5755,
+      "n_test_clients": 8,
+      "test_base_rate": 0.622241529105126,
+      "baseline_flagged_in_fold": 48,
+      "model_auc": 0.6893656004667381
+    },
+    {
+      "fold": 4,
+      "n_test_rows": 5753,
+      "n_test_clients": 8,
+      "test_base_rate": 0.5847383973579002,
+      "baseline_flagged_in_fold": 26,
+      "model_auc": 0.6767661333231133
+    }
+  ],
+  "model_features_numeric": [
+    "search_volume",
+    "competition",
+    "cpc",
+    "word_count",
+    "char_count",
+    "log_impressions_90d",
+    "log_clicks_90d",
+    "log_sessions_90d",
+    "log_ai_sessions_90d",
+    "days_with_impressions",
+    "days_with_sessions",
+    "content_age_days",
+    "days_since_last_update",
+    "ctr",
+    "avg_position",
+    "engagement_rate",
+    "scroll_rate",
+    "ai_traffic_pct"
+  ],
+  "model_features_categorical": [
+    "competition_level",
+    "content_type",
+    "main_intent",
+    "age_tier",
+    "freshness_tier",
+    "word_count_tier",
+    "impression_tier",
+    "position_tier"
+  ]
+}
